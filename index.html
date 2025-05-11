@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panda Commerce</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="bootstrap.css">
   <script src="bootstrap.bundle.js"></script>
+  <title>Panda Commerce</title>
 </head>
 
 <body>
@@ -176,6 +177,22 @@
             </div>
           </div>
 
+          <!-- 🔹 Carousel Navigation Buttons -->
+
+          <!-- 🔄 Previous Button -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <!-- 🔄 Next Button -->
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
         </div>
 
       </div>
@@ -187,83 +204,251 @@
 
 
   <main>
+    <!-- Main content section:
+      - The `<main>` tag is used to contain the primary content of the webpage.
+      - It should be unique and directly relevant to the page's purpose.
+      - Helps improve accessibility by signaling assistive technologies where the main content starts.
+      - Typically excludes repeated sections like headers, footers, or navigation bars. -->
+
+    <!-- Your main content will go inside this tag, including product listings, interactive elements, and anything central to user interaction. -->
+
 
     <section class="container pb-5">
+      <!-- This section wrapping the category showcase.
+       - `container`: Ensures proper spacing and alignment within the responsive Bootstrap container.
+       - `pb-5`: Adds bottom padding for spacing before the next section. -->
+
       <div class="container text-center">
+        <!-- Nested container:
+         - `text-center`: Centers all text inside the section for uniform alignment. -->
+
         <div class="row g-3">
+          <!-- Bootstrap row layout for category items:
+           - `g-3`: Adds spacing (`gap`) between grid columns to prevent overlapping elements. -->
+
+          <!-- 🔹 First Category - Watch -->
           <div class="col-4">
+            <!-- Defines a 3-column grid layout:
+             - `col-4`: Each item takes up 4 columns of the Bootstrap 12-column grid system. -->
+
             <div class="col p-3 d-flex justify-content-center align-items-center bg-info rounded-pill">
+              <!-- Category card container:
+               - `p-3`: Adds padding to provide spacing within the card.
+               - `d-flex justify-content-center align-items-center`: Uses Flexbox to center both vertically and horizontally.
+               - `bg-info`: Applies a Bootstrap info-colored background (light blue).
+               - `rounded-pill`: Ensures the card has fully rounded corners, creating a pill shape. -->
+
               <h1 class="col-text">Watch</h1>
-              <img src="Project-Design-&-Image/images/categories/watch.png" alt="" class="img-fluid rounded-pill">
+              <!-- Category title with semantic `<h1>` for readability. -->
+
+              <img src="Project-Design-&-Image/images/categories/watch.png" alt="Watch Image"
+                class="img-fluid rounded-pill">
+              <!-- Category image:
+               - `img-fluid`: Ensures the image is responsive and scales properly.
+               - `rounded-pill`: Gives the image a pill-shaped border.
+               - `alt="Watch Image"`: Improves accessibility by describing the image for screen readers. -->
             </div>
           </div>
+
+          <!-- 🔹 Second Category - Bag -->
           <div class="col-4">
             <div class="col p-3 d-flex justify-content-center align-items-center bg-warning rounded-pill">
+              <!-- Styling is identical to the first category, but uses `bg-warning` (yellow background). -->
               <h1 class="col-text">Bag</h1>
-              <img src="Project-Design-&-Image/images/categories/bag.png" alt="" class="img-fluid">
+              <img src="Project-Design-&-Image/images/categories/bag.png" alt="Bag Image" class="img-fluid">
             </div>
           </div>
+
+          <!-- 🔹 Third Category - Shoes -->
           <div class="col-4">
             <div class="col p-3 d-flex justify-content-center align-items-center bg-success rounded-pill">
+              <!-- Uses `bg-success` (green background) for visual contrast. -->
               <h1 class="col-text">Shoes</h1>
-              <img src="Project-Design-&-Image/images/categories/shoes.png" alt="" class="img-fluid">
+              <img src="Project-Design-&-Image/images/categories/shoes.png" alt="Shoes Image" class="img-fluid">
             </div>
           </div>
+
         </div>
+
       </div>
+
     </section>
 
 
     <section class="container">
+      <!-- Main section wrapping the shoe product listings.
+       - `container`: Ensures the section is well-aligned within a responsive Bootstrap container. -->
 
       <center>
         <h1 id="Shoes"><strong>Shoes</strong></h1>
       </center>
+      <!-- Section heading:
+       - `<center>`: Centers the title horizontally.
+       - `id="Shoes"`: Provides an anchor point for navigation, allowing links to directly jump here. -->
 
       <br><br>
+      <!-- Adds vertical spacing between the title and the product grid for better readability. -->
 
       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Bootstrap row layout for shoe product cards:
+         - `row`: Defines the row container.
+         - `row-cols-1`: Displays one column per row on small screens (mobile).
+         - `row-cols-md-3`: Converts to a three-column layout on medium screens (`md`) and larger.
+         - `g-4`: Adds spacing (`gap-4`) between the columns to prevent overlapping. -->
 
+        <!-- 🔹 First Product Card - Supply 350 -->
         <div class="col">
+          <!-- Column container:
+           - `col`: Ensures flexible grid responsiveness in Bootstrap. -->
+
           <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
-            <img src="Project-Design-&-Image/images/shoes/shoe-1.png" class="card-img-top img-fluid" alt="...">
+            <!-- Bootstrap card component:
+             - `shadow-lg`: Adds large shadow for a lifted effect.
+             - `p-3`: Applies padding inside the card for better spacing.
+             - `mb-5`: Adds bottom margin to separate cards from one another.
+             - `bg-body`: Uses a background color matching the body for consistency.
+             - `rounded`: Applies rounded corners for smoother UI.
+             - `border-0`: Removes default borders for a cleaner look. -->
+
+            <img src="Project-Design-&-Image/images/shoes/shoe-1.png" class="card-img-top img-fluid"
+              alt="Supply 350 Shoe">
+            <!-- Product image:
+             - `card-img-top`: Ensures the image appears at the top of the card.
+             - `img-fluid`: Makes the image responsive.
+             - `alt="Supply 350 Shoe"`: Provides alternative text for accessibility. -->
+
             <div class="card-body">
+              <!-- Card content wrapper for text and buttons. -->
+
               <h5 class="card-title"><strong>Supply 350</strong></h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                additional.</p>
-              <h5><strong>$120</strong></h5>
-              <button class="btn btn-outline-dark m-2 mt-4"><strong>
-                  <h5>Buy Now</h5>
-                </strong></button>
-            </div>
-          </div>
-        </div>
+              <!-- Product title with `<h5>` for hierarchy and emphasis. -->
 
-        <div class="col">
-          <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
-            <img src="Project-Design-&-Image/images/shoes/shoe-2.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Nike 360</strong></h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <h5><strong>$320</strong></h5>
-              <button class="btn btn-outline-secondary m-2 mt-4"><strong>
-                  <h5>Buy Now</h5>
-                </strong></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
-            <img src="Project-Design-&-Image/images/shoes/shoe-3.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Red Airmax</strong></h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional.
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.
               </p>
-              <h5><strong>$350</strong></h5>
-              <button class="btn btn-outline-danger m-2 mt-4"><strong>
+              <!-- Product description:
+               - `card-text`: Ensures correct styling within Bootstrap cards. -->
+
+              <h5><strong>$120</strong></h5>
+              <!-- Price display:
+               - `<h5>`: Maintains hierarchy while keeping the pricing noticeable. -->
+
+              <button class="btn btn-outline-dark m-2 mt-4">
+                <strong>
                   <h5>Buy Now</h5>
-                </strong></button>
+                </strong>
+              </button>
+              <!-- Call-to-action button:
+               - `btn btn-outline-dark`: Uses Bootstrap's dark-outline style for a professional look.
+               - `m-2`: Adds margin to prevent button from being too close to other elements.
+               - `mt-4`: Provides extra top spacing to enhance button placement. -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 🔹 Second Product Card - Nike 360 -->
+        <div class="col">
+          <!-- Column container:
+           - `col`: Ensures flexible responsiveness within Bootstrap's grid system. -->
+
+          <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
+            <!-- Bootstrap card component:
+             - `shadow-lg`: Adds a large shadow for a lifted effect.
+             - `p-3`: Provides padding inside the card for proper spacing.
+             - `mb-5`: Adds a bottom margin to separate cards visually.
+             - `bg-body`: Uses a neutral background matching the page's body color.
+             - `rounded`: Applies rounded corners for a smoother UI.
+             - `border-0`: Removes default borders for a cleaner, minimalist design. -->
+
+            <img src="Project-Design-&-Image/images/shoes/shoe-2.png" class="card-img-top img-fluid"
+              alt="Nike 360 Shoe">
+            <!-- Product image:
+             - `card-img-top`: Ensures the image is positioned at the top of the card.
+             - `img-fluid`: Ensures the image is responsive and scales well across devices.
+             - `alt="Nike 360 Shoe"`: Adds alternative text for accessibility and SEO optimization. -->
+
+            <div class="card-body">
+              <!-- Card content wrapper for the product title, description, price, and button. -->
+
+              <h5 class="card-title"><strong>Nike 360</strong></h5>
+              <!-- Product name:
+               - Uses `<h5>` for proper text hierarchy.
+               - `<strong>` makes the text bold for emphasis. -->
+
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <!-- Product description:
+               - `card-text`: Uses Bootstrap's default card styling for readable text.
+               - Provides contextual information about the product. -->
+
+              <h5><strong>$320</strong></h5>
+              <!-- Price display:
+               - `<h5>` keeps text hierarchy while making the pricing prominent. -->
+
+              <button class="btn btn-outline-secondary m-2 mt-4">
+                <strong>
+                  <h5>Buy Now</h5>
+                </strong>
+              </button>
+              <!-- Call-to-action button:
+               - `btn btn-outline-secondary`: Uses a Bootstrap outlined button for a sleek look.
+               - `m-2`: Adds margin for spacing around the button.
+               - `mt-4`: Provides extra top spacing to improve button positioning. -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 🔹 Third Product Card - Red Airmax -->
+        <div class="col">
+          <!-- Column container:
+           - `col`: Defines a Bootstrap grid column that adjusts responsively. -->
+
+          <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
+            <!-- Bootstrap card component:
+             - `shadow-lg`: Adds a large shadow for depth and emphasis.
+             - `p-3`: Adds padding inside the card for proper spacing.
+             - `mb-5`: Applies bottom margin to separate from other cards.
+             - `bg-body`: Uses a neutral background matching the page's theme.
+             - `rounded`: Applies rounded corners for smooth UI.
+             - `border-0`: Removes default borders for a cleaner, minimalist design. -->
+
+            <img src="Project-Design-&-Image/images/shoes/shoe-3.png" class="card-img-top img-fluid"
+              alt="Red Airmax Shoe">
+            <!-- Product image:
+             - `card-img-top`: Places the image at the top of the card layout.
+             - `img-fluid`: Ensures responsiveness across different screen sizes.
+             - `alt="Red Airmax Shoe"`: Provides alternative text for accessibility and SEO optimization. -->
+
+            <div class="card-body">
+              <!-- Card content container:
+               - Holds the product title, description, price, and action button. -->
+
+              <h5 class="card-title"><strong>Red Airmax</strong></h5>
+              <!-- Product name:
+               - Uses `<h5>` for structured text hierarchy.
+               - `<strong>` ensures the title stands out. -->
+
+              <p class="card-text">
+                <!-- Product description:
+                 - `card-text`: Uses Bootstrap's styling for readable content.
+                 - Acts as supporting text to provide details about the shoe. -->
+                This is a wider card with supporting text below as a natural lead-in to additional.
+              </p>
+
+              <h5><strong>$350</strong></h5>
+              <!-- Price display:
+               - `<h5>` keeps the text hierarchy while making pricing prominent.
+               - `<strong>` emphasizes the amount. -->
+
+              <button class="btn btn-outline-danger m-2 mt-4">
+                <!-- Call-to-action button:
+                 - `btn btn-outline-danger`: Uses Bootstrap's red-outline button styling.
+                 - `m-2`: Adds spacing around the button.
+                 - `mt-4`: Provides extra top margin for optimal placement. -->
+
+                <strong>
+                  <h5>Buy Now</h5>
+                </strong>
+                <!-- Buy Now text styled with a heading (`<h5>`) for emphasis. -->
+              </button>
             </div>
           </div>
         </div>
@@ -274,55 +459,180 @@
 
 
     <section class="container">
+      <!-- Main section wrapping the backpack product listings.
+       - `container`: Ensures proper spacing and alignment within Bootstrap's responsive grid system. -->
 
       <center>
         <h1 id="Backpack"><strong>Backpack</strong></h1>
       </center>
+      <!-- Section title:
+       - `<center>`: Horizontally centers the title.
+       - `id="Backpack"`: Adds an identifier for navigation linking, allowing users to jump directly to this section. -->
 
       <br><br>
+      <!-- Adds vertical spacing between the section title and product cards for better readability. -->
 
       <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4">
+        <!-- Bootstrap row layout for the backpack product cards:
+         - `row`: Defines a row container for a flexible grid layout.
+         - `row-cols-1`: Ensures one column per row on small screens.
+         - `row-cols-md-3`: Converts to a three-column grid for medium screens (`md`) and larger.
+         - `row-cols-lg-3`: Maintains the three-column layout for large screens (`lg`).
+         - `g-4`: Adds spacing (`gap-4`) between the grid items to improve readability and separation. -->
 
+        <!-- 🔹 First Product Card - Red Laltu Bag -->
         <div class="col">
+          <!-- Defines a responsive column inside the row container. -->
+
           <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
-            <img src="Project-Design-&-Image/images/bags/bag-1.png" class="card-img-top img-fluid" alt="...">
+            <!-- Bootstrap card component:
+             - `shadow-lg`: Adds a large shadow to make the card visually stand out.
+             - `p-3`: Adds padding to provide spacing within the card.
+             - `mb-5`: Provides bottom margin to separate cards vertically.
+             - `bg-body`: Matches the background color with the page theme.
+             - `rounded`: Applies rounded edges for smoother aesthetics.
+             - `border-0`: Removes the default border for a clean design. -->
+
+            <img src="Project-Design-&-Image/images/bags/bag-1.png" class="card-img-top img-fluid" alt="Red Laltu Bag">
+            <!-- Product image:
+             - `card-img-top`: Places the image at the top of the card.
+             - `img-fluid`: Ensures responsiveness across different screen sizes.
+             - `alt="Red Laltu Bag"`: Adds alternative text for accessibility and SEO optimization. -->
+
             <div class="card-body">
+              <!-- Card content container:
+               - Holds the product title, price, description, and button. -->
+
               <h5 class="card-title"><strong>Red Laltu Bag</strong></h5>
+              <!-- Product name:
+               - Uses `<h5>` for structured text hierarchy.
+               - `<strong>` ensures emphasis on the product title. -->
+
               <h5><strong>$120</strong></h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer</p>
-              <button class="btn btn-outline-danger m-2 mt-4"><strong>
+              <!-- Price display:
+               - `<h5>` makes the price prominent and structured.
+               - `<strong>` bolds the pricing for better visibility. -->
+
+              <p class="card-text">
+                <!-- Product description:
+                 - `card-text`: Uses Bootstrap styling for readability. -->
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                is a little bit longer.
+              </p>
+
+              <button class="btn btn-outline-danger m-2 mt-4">
+                <strong>
                   <h5>Buy Now</h5>
-                </strong></button>
+                </strong>
+              </button>
+              <!-- Call-to-action button:
+               - `btn btn-outline-danger`: Uses a Bootstrap red-outline button style.
+               - `m-2`: Adds spacing to prevent crowding.
+               - `mt-4`: Provides extra top margin to enhance positioning. -->
             </div>
           </div>
         </div>
 
+        <!-- 🔹 Second Product Card - Blue Niltu Bag -->
         <div class="col">
+          <!-- Defines a responsive Bootstrap column to properly structure the product card in a grid. -->
+
           <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
-            <img src="Project-Design-&-Image/images/bags/bag-2.png" class="card-img-top img-fluid" alt="...">
+            <!-- Bootstrap card component:
+             - `shadow-lg`: Adds a large shadow effect for an elevated visual appearance.
+             - `p-3`: Provides padding inside the card for proper spacing.
+             - `mb-5`: Applies a bottom margin to maintain spacing between product cards.
+             - `bg-body`: Uses a neutral background matching the page's theme.
+             - `rounded`: Applies smooth rounded edges for a modern feel.
+             - `border-0`: Removes the default border to achieve a clean design. -->
+
+            <img src="Project-Design-&-Image/images/bags/bag-2.png" class="card-img-top img-fluid" alt="Blue Niltu Bag">
+            <!-- Product image:
+             - `card-img-top`: Places the image at the top inside the card.
+             - `img-fluid`: Ensures the image is responsive across all devices.
+             - `alt="Blue Niltu Bag"`: Provides alternative text for accessibility and SEO improvement. -->
+
             <div class="card-body">
+              <!-- Card content container: Holds the product title, price, description, and action button. -->
+
               <h5 class="card-title"><strong>Blue Niltu Bag</strong></h5>
+              <!-- Product name:
+               - `<h5>` ensures proper text hierarchy.
+               - `<strong>` bolds the title for emphasis. -->
+
               <h5><strong>$320</strong></h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <button class="btn btn-outline-primary m-2 mt-4"><strong>
+              <!-- Price display:
+               - `<h5>` makes the price noticeable.
+               - `<strong>` emphasizes the numerical value. -->
+
+              <p class="card-text">
+                <!-- Product description: Uses Bootstrap styling for consistent readability. -->
+                This card has supporting text below as a natural lead-in to additional content.
+              </p>
+
+              <button class="btn btn-outline-primary m-2 mt-4">
+                <strong>
                   <h5>Buy Now</h5>
-                </strong></button>
+                </strong>
+              </button>
+              <!-- Call-to-action button:
+               - `btn btn-outline-primary`: Uses a Bootstrap blue-outline button.
+               - `m-2`: Adds spacing around the button for separation.
+               - `mt-4`: Provides extra top margin for better positioning. -->
             </div>
           </div>
         </div>
 
+
+        <!-- 🔹 Third Product Card - Black Kaltu Bag -->
         <div class="col">
+          <!-- Defines a responsive Bootstrap column for flexible grid layout. -->
+
           <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
-            <img src="Project-Design-&-Image/images/bags/bag-3.png" class="card-img-top img-fluid" alt="...">
+            <!-- Bootstrap card component:
+             - `shadow-lg`: Adds a large shadow effect for an elevated appearance.
+             - `p-3`: Provides padding inside the card for proper spacing.
+             - `mb-5`: Adds bottom margin for spacing between product cards.
+             - `bg-body`: Matches the page background for a seamless look.
+             - `rounded`: Applies smooth rounded edges for modern aesthetics.
+             - `border-0`: Removes the default border for a clean, professional design. -->
+
+            <img src="Project-Design-&-Image/images/bags/bag-3.png" class="card-img-top img-fluid"
+              alt="Black Kaltu Bag">
+            <!-- Product image:
+             - `card-img-top`: Ensures the image is positioned at the top inside the card.
+             - `img-fluid`: Makes the image responsive across different screen sizes.
+             - `alt="Black Kaltu Bag"`: Provides alternative text for accessibility and SEO optimization. -->
+
             <div class="card-body">
+              <!-- Card content container: Holds the product title, price, description, and action button. -->
+
               <h5 class="card-title"><strong>Black Kaltu Bag</strong></h5>
+              <!-- Product name:
+               - `<h5>` ensures text hierarchy.
+               - `<strong>` emphasizes the product title for better readability. -->
+
               <h5><strong>$169</strong></h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
-              <button class="btn btn-outline-dark m-2 mt-4"><strong>
+              <!-- Price display:
+               - `<h5>` maintains proper text structure.
+               - `<strong>` highlights the price to draw attention. -->
+
+              <p class="card-text">
+                <!-- Product description:
+                 - Uses Bootstrap's styling for readability and spacing. -->
+                This is a wider card with supporting text below as a natural lead-in to additional content.
+                This card has even longer content than the first to show that equal height action.
+              </p>
+
+              <button class="btn btn-outline-dark m-2 mt-4">
+                <strong>
                   <h5>Buy Now</h5>
-                </strong></button>
+                </strong>
+              </button>
+              <!-- Call-to-action button:
+               - `btn btn-outline-dark`: Uses a Bootstrap dark-outline button to complement the product theme.
+               - `m-2`: Adds spacing around the button for better placement.
+               - `mt-4`: Provides extra top margin for improved positioning. -->
             </div>
           </div>
         </div>
@@ -332,42 +642,129 @@
     </section>
 
 
-    <section class="container shadow-lg shadow-lg p-3 mb-5 bg-secondary rounded">
+    <section class="container shadow-lg p-3 mb-5 bg-secondary rounded">
+      <!-- Subscription form section:
+       - `container`: Wraps content inside a responsive Bootstrap container.
+       - `shadow-lg`: Adds a large shadow for an elevated effect.
+       - `p-3`: Provides inner padding for spacing.
+       - `mb-5`: Adds bottom margin for separation from other sections.
+       - `bg-secondary`: Applies a Bootstrap secondary color (usually gray) for contrast.
+       - `rounded`: Gives the section smooth rounded edges for a modern design. -->
+
       <center>
-        <div class="row  w-50">
+        <!-- Centers the content inside this section, ensuring a clean visual alignment. -->
+
+        <div class="row w-50">
+          <!-- Defines a Bootstrap row for structured layout:
+           - `w-50`: Limits width to 50% for better focus on form elements. -->
+
           <h2 class="text-white">
             <strong>LET'S STAY IN TOUCH</strong>
           </h2>
+          <!-- Section title:
+           - `<h2>` provides clear heading hierarchy.
+           - `text-white`: Ensures white text on a dark background for contrast.
+           - `<strong>` makes the heading stand out. -->
+
           <p class="text-white">
             Get updates on sales, specials and more
           </p>
+          <!-- Supporting text in white for readability against the dark background. -->
+
           <form>
+            <!-- Subscription form section for user feedback and engagement. -->
+
             <div class="mb-3">
+              <!-- Wrapper for input field and button:
+               - `mb-3`: Adds bottom margin to separate form elements. -->
+
               <label for="formGroupExampleInput" class="form-label">
-                <h4 class="text-white"><strong>please sheare your experience whith us</strong></h4>
+                <h4 class="text-white"><strong>Please share your experience with us</strong></h4>
               </label>
+              <!-- Form label:
+               - `<h4>` makes the instruction prominent.
+               - `text-white`: Ensures visibility against the background.
+               - `<strong>` enhances readability and emphasis. -->
+
               <div class="col">
-                <input type="text" class="form-control" placeholder="SHEARE YOUR EXPERIENCE WHITH US"
+                <input type="text" class="form-control" placeholder="SHARE YOUR EXPERIENCE WITH US"
                   aria-label="First name">
+                <!-- User input field:
+                 - `form-control`: Applies Bootstrap's standard input styling.
+                 - `placeholder`: Provides guidance text inside the input field.
+                 - `aria-label="First name"`: Enhances accessibility for screen readers. -->
               </div>
-              <button class="btn btn-outline-danger m-2 mt-4"><strong>
+
+              <button class="btn btn-outline-danger m-2 mt-4">
+                <strong>
                   <h5>SUBMIT</h5>
-                </strong></button>
+                </strong>
+              </button>
+              <!-- Submit button:
+               - `btn btn-outline-danger`: Uses a Bootstrap red-outline button style.
+               - `m-2`: Adds spacing around the button to prevent overlap.
+               - `mt-4`: Adds top margin for better placement.
+               - `<h5>` keeps the text visually clear inside the button.
+               - `<strong>` ensures boldness for emphasis. -->
             </div>
           </form>
         </div>
       </center>
-
     </section>
 
   </main>
 
-  <footer>
+  <footer class="bg-dark text-light py-5">
+    <!-- Footer wrapper:
+       - `bg-dark`: Uses a dark background for a sleek and modern feel.
+       - `text-light`: Ensures high contrast for readability.
+       - `py-5`: Adds vertical padding to create a balanced layout. -->
 
-    <center>
-      <p class="text-secondary">©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria. </p>
-    </center>
+    <div class="container">
+      <!-- Responsive container that maintains structure and spacing. -->
 
+      <div class="row text-center text-md-start">
+        <!-- Bootstrap row for structured layout:
+           - `text-center`: Centers content on small screens.
+           - `text-md-start`: Aligns content to the left on larger screens. -->
+
+        <!-- 🔹 Brand & Copyright -->
+        <div class="col-md-4">
+          <h5 class="fw-bold">Panda Commerce</h5>
+          <p>© 2025. All rights reserved. Sofia, Bulgaria.</p>
+        </div>
+
+        <!-- 🔹 Quick Links -->
+        <div class="col-md-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Products</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+            <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- 🔹 Social Media & Subscription -->
+        <div class="col-md-4">
+          <h2 class="fw-bold">Stay Connected</h2>
+
+          <!-- Social Media Icons -->
+          <div class="mb-3">
+            <a href="#" class="text-light mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+          </div>
+
+          <!-- Subscription Form -->
+          <form>
+            <input type="email" class="form-control mb-2" placeholder="Enter your email">
+            <button class="btn btn-outline-light w-100">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </body>
