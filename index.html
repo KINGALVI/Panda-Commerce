@@ -14,25 +14,55 @@
 <body>
 
   <header>
+    <!-- Header section wraps the navigation bar and the carousel banner. -->
 
+    <!-- 📌 Navigation Bar Section -->
     <section class="container">
+      <!-- Ensures the navbar stays within a responsive container. -->
+
       <nav class="ms-5 me-5 mt-2 navbar navbar-expand-lg bg-light">
+        <!-- Navigation Bar:
+           - `ms-5 me-5`: Adds left and right margin for spacing.
+           - `mt-2`: Top margin to separate from previous content.
+           - `navbar navbar-expand-lg`: Uses Bootstrap's responsive navbar component.
+           - `bg-light`: Applies a light background color for contrast. -->
+
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="img-fluid" src="Project-Design-&-Image/images/logo.png"
-              alt="logo picture"></a>
+          <!-- Uses a full-width Bootstrap container for fluid responsiveness. -->
+
+          <!-- 🔹 Brand Logo -->
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="Project-Design-&-Image/images/logo.png" alt="logo picture">
+          </a>
+          <!-- Ensures the logo is fluidly responsive (`img-fluid`) for different screen sizes. -->
+
+          <!-- 🔹 Navbar Toggle for Mobile -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Enables mobile-responsive toggle functionality.
+             - `data-bs-toggle="collapse"`: Controls the collapse animation.
+             - `aria-expanded="false"`: Default state (collapsed).
+             - `aria-label="Toggle navigation"`: Improves accessibility. -->
+
+          <!-- 🔹 Collapsible Navbar Menu -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Navigation items container:
+                 - `navbar-nav`: Defines Bootstrap's navigation structure.
+                 - `me-auto`: Pushes the links to the left while the search remains right-aligned.
+                 - `mb-2 mb-lg-0`: Handles spacing adjustments for different screen sizes. -->
+
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#"><strong>Home</strong></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Shoes"><strong>Product</strong></a>
               </li>
+
+              <!-- 🔹 Dropdown Menu -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -47,101 +77,104 @@
                   <li><a class="dropdown-item" href="#"><strong>Our Goal</strong></a></li>
                 </ul>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#"><strong>Contact Us</strong></a>
               </li>
             </ul>
+
+            <!-- 🔹 Search Bar -->
             <form class="d-flex" role="search">
-              <input class="form-control me-4 ps-5 pe-5 text start rounded" type="search" placeholder="Search"
+              <input class="form-control me-4 ps-5 pe-5 text-start rounded" type="search" placeholder="Search"
                 aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
+
         </div>
+
       </nav>
+
     </section>
 
-    <section class="container w-75 mt-5 mb-5 w-100">
 
-      <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+    <section class="container w-75 mt-5 mb-5 w-100">
+      <!-- Wraps the carousel in a responsive container:
+         - `w-75`: Limits width to 75% for better visibility.
+         - `mt-5 mb-5`: Adds top and bottom margins.
+         - `w-100`: Ensures full-width responsiveness. -->
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <!-- Bootstrap Carousel Component:
+           - `carousel slide`: Defines sliding animation.
+           - `data-bs-ride="carousel"`: Enables auto-sliding functionality. -->
 
         <div class="carousel-inner d-flex" style="height: 500px; width: 1130px;">
+          <!-- Carousel inner wrapper:
+             - `d-flex`: Makes it a flexible container.
+             - `style="height: 500px; width: 1130px;"`: Custom dimensions for content alignment. -->
 
-          <div class=" carousel-item active border rounded-5 bg-primary w-100 mb-0 d-flex align-items-center">
+          <!-- 🔹 First Slide - Headphones -->
+          <div class="carousel-item active border rounded-5 bg-primary w-100 mb-0 d-flex align-items-center">
             <div class="row">
               <div class="col-lg-6 d-flex align-items-center">
                 <div class="ms-5">
-                  <h1 class="col-title text-white md-text-center">Cool dude heabphone</h1>
+                  <h1 class="col-title text-white md-text-center">Cool Dude Headphone</h1>
                   <p class="col-text text-white">
-                    this is the best headphone for the people who just want to waste time in font of fucky world.
-                  <h1 class="col-text text-white">$420</h1>
-                  <button class="btn btn-danger mt-4"><strong>
-                      <h5>Buy Now</h5>
-                    </strong></button>
+                    This is the best headphone for people who love immersive sound.
                   </p>
+                  <h1 class="col-text text-white">$420</h1>
+                  <button class="btn btn-danger mt-4">
+                    <h5><strong>Buy Now</strong></h5>
+                  </button>
                 </div>
               </div>
               <div class="col-lg-6">
-                <img src="Project-Design-&-Image/images/banner-images/headphone.png" class="img-fluid pe-0" alt="..."
-                  style="height: 450px; width: 500px;">
+                <img src="Project-Design-&-Image/images/banner-images/headphone.png" class="img-fluid pe-0"
+                  alt="Headphone Image" style="height: 450px; width: 500px;">
               </div>
             </div>
           </div>
 
-          <div class=" carousel-item border rounded-5 bg-primary w-100 mb-0">
+          <!-- 🔹 Second Slide - Mega LCD TV -->
+          <div class="carousel-item border rounded-5 bg-primary w-100 mb-0">
             <div class="row">
               <div class="col-lg-6 d-flex align-items-center">
                 <div class="ms-5">
                   <h1 class="col-title text-white">Mega LCD TV For Sports</h1>
-                  <p class="col-text text-white">
-                    This is the best tv in the world for people who just want to waste time in front of tv.
+                  <p class="col-text text-white">Best TV for sports enthusiasts with an immersive display.</p>
                   <h1 class="col-text text-white">$1200</h1>
-                  <button class="btn btn-danger mt-4"><strong>
-                      <h5>Buy Now</h5>
-                    </strong></button>
-                  </p>
+                  <button class="btn btn-danger mt-4">
+                    <h5><strong>Buy Now</strong></h5>
+                  </button>
                 </div>
               </div>
               <div class="col-lg-6 pt-4">
                 <img src="Project-Design-&-Image/images/banner-images/tv.png" class="img-fluid d-block rounded-5 pe-0"
-                  alt="..." style="height: 450px; width: 500px;">
+                  alt="TV Image" style="height: 450px; width: 500px;">
               </div>
             </div>
           </div>
 
-          <div class=" carousel-item border rounded-5 bg-primary w-100 mb-0">
+          <!-- 🔹 Third Slide - X-Box -->
+          <div class="carousel-item border rounded-5 bg-primary w-100 mb-0">
             <div class="row">
               <div class="col-lg-6 d-flex align-items-center">
                 <div class="ms-5">
-                  <h1 class="col-title text-white ">X-Box for your living room</h1>
-                  <p class="col-text text-white">
-                    This is the best x-box in the world for people who just want to waste time in front of fake
-                    sports.
+                  <h1 class="col-title text-white">X-Box for Your Living Room</h1>
+                  <p class="col-text text-white">The best console for immersive gaming experiences.</p>
                   <h1 class="col-text text-white">$600</h1>
-                  <button class="btn btn-danger mt-4"><strong>
-                      <h5>Buy Now</h5>
-                    </strong></button>
-                  </p>
+                  <button class="btn btn-danger mt-4">
+                    <h5><strong>Buy Now</strong></h5>
+                  </button>
                 </div>
               </div>
               <div class="col-lg-6">
-                <img src="Project-Design-&-Image/images/banner-images/xbox.png" class="img-fluid d-block pe-0" alt="..."
-                  style="height: 450px; width: 500px;">
+                <img src="Project-Design-&-Image/images/banner-images/xbox.png" class="img-fluid d-block pe-0"
+                  alt="X-Box Image" style="height: 450px; width: 500px;">
               </div>
             </div>
           </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
 
         </div>
 
@@ -150,6 +183,7 @@
     </section>
 
   </header>
+
 
 
   <main>
