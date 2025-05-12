@@ -25,4 +25,4 @@ Built with **modern web technologies**, it provides a smooth, interactive, and a
 1️⃣ Clone the repository  
 
 ```sh
-git clone https://github.com/your-username/panda-commerce.git
+git clone https://github.com/KINGALVI/Panda-Commerce.git
