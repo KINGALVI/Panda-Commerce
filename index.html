@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="bootstrap.css">
   <script src="bootstrap.bundle.js"></script>
   <title>Panda Commerce</title>
@@ -99,104 +98,182 @@
     </section>
 
 
-    <section class="container w-75 mt-5 mb-5 w-100">
-      <!-- Wraps the carousel in a responsive container:
-         - `w-75`: Limits width to 75% for better visibility.
-         - `mt-5 mb-5`: Adds top and bottom margins.
-         - `w-100`: Ensures full-width responsiveness. -->
+    <section class="container-fluid mt-5 mb-5">
+      <!-- 🔹 Carousel Wrapper:
+       - `container-fluid`: Ensures full-width responsiveness across all devices.
+       - `mt-5 mb-5`: Adds top and bottom margins for better spacing. -->
 
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <!-- Bootstrap Carousel Component:
-           - `carousel slide`: Defines sliding animation.
-           - `data-bs-ride="carousel"`: Enables auto-sliding functionality. -->
+        <!-- 🔹 Bootstrap Carousel Component:
+         - `id="carouselExampleControls"`: Identifies the carousel for navigation buttons.
+         - `carousel slide`: Enables smooth sliding transition effects.
+         - `data-bs-ride="carousel"`: Auto-starts the carousel on page load. -->
 
-        <div class="carousel-inner d-flex" style="height: 500px; width: 1130px;">
-          <!-- Carousel inner wrapper:
-             - `d-flex`: Makes it a flexible container.
-             - `style="height: 500px; width: 1130px;"`: Custom dimensions for content alignment. -->
+        <div class="carousel-inner">
+          <!-- 🔹 Carousel Inner Wrapper:
+           - Contains all carousel items (slides). -->
 
           <!-- 🔹 First Slide - Headphones -->
-          <div class="carousel-item active border rounded-5 bg-primary w-100 mb-0 d-flex align-items-center">
-            <div class="row">
-              <div class="col-lg-6 d-flex align-items-center">
-                <div class="ms-5">
-                  <h1 class="col-title text-white md-text-center">Cool Dude Headphone</h1>
-                  <p class="col-text text-white">
-                    This is the best headphone for people who love immersive sound.
-                  </p>
-                  <h1 class="col-text text-white">$420</h1>
-                  <button class="btn btn-danger mt-4">
-                    <h5><strong>Buy Now</strong></h5>
-                  </button>
+          <div class="carousel-item active border rounded-5 bg-primary w-100 mb-0">
+            <!-- `carousel-item active`: Sets this slide as the default active slide.
+             - `border rounded-5`: Adds smooth rounded edges.
+             - `bg-primary`: Gives a blue background.
+             - `w-100`: Ensures full-width layout.
+             - `mb-0`: Removes unwanted margin for a cleaner look. -->
+
+            <div class="row align-items-center">
+              <!-- 🔹 Responsive Grid for Slide Content:
+               - `row align-items-center`: Uses Bootstrap grid to structure content.
+               - Ensures vertical alignment across different screen sizes. -->
+
+              <div class="col-md-6 text-center text-md-start">
+                <!-- 🔹 Text Content:
+                 - `col-md-6`: Divides the content into 50% width on medium and larger screens.
+                 - `text-center text-md-start`: Centers text on small screens, left-aligns it on medium screens. -->
+
+                <div class="p-4">
+                  <h1 class="text-white">Cool Dude Headphone</h1>
+                  <p class="text-white">Best headphone for immersive sound.</p>
+                  <h1 class="text-white">$420</h1>
+                  <button class="btn btn-danger mt-4"><strong>Buy Now</strong></button>
+                  <!-- 🔹 Call-to-Action Button:
+                   - `btn btn-danger`: Uses a Bootstrap red-colored button.
+                   - `mt-4`: Adds top margin for better spacing. -->
                 </div>
               </div>
-              <div class="col-lg-6">
-                <img src="Project-Design-&-Image/images/banner-images/headphone.png" class="img-fluid pe-0"
-                  alt="Headphone Image" style="height: 450px; width: 500px;">
+
+              <div class="col-md-6 text-center">
+                <!-- 🔹 Image Section:
+                 - `col-md-6`: Assigns half-width space for the image on medium+ screens.
+                 - `text-center`: Ensures image stays centered on small screens. -->
+
+                <img src="Project-Design-&-Image/images/banner-images/headphone.png" class="img-fluid"
+                  alt="Headphone Image">
+                <!-- 🔹 Image Properties:
+                 - `img-fluid`: Makes the image responsive.
+                 - `alt="Headphone Image"`: Improves accessibility. -->
               </div>
             </div>
           </div>
 
           <!-- 🔹 Second Slide - Mega LCD TV -->
           <div class="carousel-item border rounded-5 bg-primary w-100 mb-0">
-            <div class="row">
-              <div class="col-lg-6 d-flex align-items-center">
-                <div class="ms-5">
-                  <h1 class="col-title text-white">Mega LCD TV For Sports</h1>
-                  <p class="col-text text-white">Best TV for sports enthusiasts with an immersive display.</p>
-                  <h1 class="col-text text-white">$1200</h1>
-                  <button class="btn btn-danger mt-4">
-                    <h5><strong>Buy Now</strong></h5>
-                  </button>
+            <!-- `carousel-item active`: Sets this slide as the default active slide.
+             - `border rounded-5`: Adds smooth rounded edges.
+             - `bg-primary`: Gives a blue background.
+             - `w-100`: Ensures full-width layout.
+             - `mb-0`: Removes unwanted margin for a cleaner look. -->
+
+            <div class="row align-items-center">
+              <!-- 🔹 Responsive Grid for Slide Content:
+               - `row align-items-center`: Uses Bootstrap grid to structure content.
+               - Ensures vertical alignment across different screen sizes. -->
+
+              <div class="col-md-6 text-center text-md-start">
+                <!-- 🔹 Text Content:
+                 - `col-md-6`: Divides the content into 50% width on medium and larger screens.
+                 - `text-center text-md-start`: Centers text on small screens, left-aligns it on medium screens. -->
+
+                <div class="p-4">
+                  <h1 class="text-white">Mega LCD TV For Sports</h1>
+                  <p class="text-white">Best TV for sports enthusiasts.</p>
+                  <h1 class="text-white">$1200</h1>
+                  <button class="btn btn-danger mt-4"><strong>Buy Now</strong></button>
+                  <!-- 🔹 Call-to-Action Button:
+                   - `btn btn-danger`: Uses a Bootstrap red-colored button.
+                   - `mt-4`: Adds top margin for better spacing. -->
                 </div>
               </div>
-              <div class="col-lg-6 pt-4">
-                <img src="Project-Design-&-Image/images/banner-images/tv.png" class="img-fluid d-block rounded-5 pe-0"
-                  alt="TV Image" style="height: 450px; width: 500px;">
+
+              <div class="col-md-6 text-center">
+                <!-- 🔹 Image Section:
+                 - `col-md-6`: Assigns half-width space for the image on medium+ screens.
+                 - `text-center`: Ensures image stays centered on small screens. -->
+
+                <img src="Project-Design-&-Image/images/banner-images/tv.png" class="img-fluid" alt="TV Image">
+                <!-- 🔹 Image Properties:
+                 - `img-fluid`: Makes the image responsive.
+                 - `alt="TV Image"`: Improves accessibility. -->
               </div>
             </div>
           </div>
 
           <!-- 🔹 Third Slide - X-Box -->
           <div class="carousel-item border rounded-5 bg-primary w-100 mb-0">
-            <div class="row">
-              <div class="col-lg-6 d-flex align-items-center">
-                <div class="ms-5">
-                  <h1 class="col-title text-white">X-Box for Your Living Room</h1>
-                  <p class="col-text text-white">The best console for immersive gaming experiences.</p>
-                  <h1 class="col-text text-white">$600</h1>
-                  <button class="btn btn-danger mt-4">
-                    <h5><strong>Buy Now</strong></h5>
-                  </button>
+            <!-- `carousel-item active`: Sets this slide as the default active slide.
+             - `border rounded-5`: Adds smooth rounded edges.
+             - `bg-primary`: Gives a blue background.
+             - `w-100`: Ensures full-width layout.
+             - `mb-0`: Removes unwanted margin for a cleaner look. -->
+
+            <div class="row align-items-center">
+              <!-- 🔹 Responsive Grid for Slide Content:
+               - `row align-items-center`: Uses Bootstrap grid to structure content.
+               - Ensures vertical alignment across different screen sizes. -->
+
+              <div class="col-md-6 text-center text-md-start">
+                <!-- 🔹 Text Content:
+                 - `col-md-6`: Divides the content into 50% width on medium and larger screens.
+                 - `text-center text-md-start`: Centers text on small screens, left-aligns it on medium screens. -->
+
+                <div class="p-4">
+                  <h1 class="text-white">X-Box for Your Living Room</h1>
+                  <p class="text-white">Best console for immersive gaming.</p>
+                  <h1 class="text-white">$600</h1>
+                  <button class="btn btn-danger mt-4"><strong>Buy Now</strong></button>
+                  <!-- 🔹 Call-to-Action Button:
+                   - `btn btn-danger`: Uses a Bootstrap red-colored button.
+                   - `mt-4`: Adds top margin for better spacing. -->
                 </div>
               </div>
-              <div class="col-lg-6">
-                <img src="Project-Design-&-Image/images/banner-images/xbox.png" class="img-fluid d-block pe-0"
-                  alt="X-Box Image" style="height: 450px; width: 500px;">
+              <div class="col-md-6 text-center">
+                <!-- 🔹 Image Section:
+                 - `col-md-6`: Assigns half-width space for the image on medium+ screens.
+                 - `text-center`: Ensures image stays centered on small screens. -->
+
+                <img src="Project-Design-&-Image/images/banner-images/xbox.png" class="img-fluid" alt="X-Box Image">
+                <!-- 🔹 Image Properties:
+                 - `img-fluid`: Makes the image responsive.
+                 - `alt="TV Image"`: Improves accessibility. -->
+
               </div>
             </div>
           </div>
-
-          <!-- 🔹 Carousel Navigation Buttons -->
-
-          <!-- 🔄 Previous Button -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-
-          <!-- 🔄 Next Button -->
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-
         </div>
 
-      </div>
+        <!-- 🔹 Carousel Navigation Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <!-- 🔹 Previous Button:
+           - `carousel-control-prev`: Positions button to navigate left.
+           - `data-bs-slide="prev"`: Moves to previous slide. -->
 
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <!-- 🔹 Previous Icon:
+           - Uses Bootstrap's predefined left-arrow style.
+           - `aria-hidden="true"` hides it from screen readers. -->
+
+          <span class="visually-hidden">Previous</span>
+          <!-- 🔹 Accessibility Enhancement:
+           - Helps screen readers interpret the action correctly. -->
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <!-- 🔹 Next Button:
+           - `carousel-control-next`: Positions button to navigate right.
+           - `data-bs-slide="next"`: Moves to next slide. -->
+
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <!-- 🔹 Next Icon:
+           - Uses Bootstrap's predefined right-arrow style.
+           - `aria-hidden="true"` hides it from screen readers. -->
+
+          <span class="visually-hidden">Next</span>
+          <!-- 🔹 Accessibility Enhancement:
+           - Helps screen readers understand navigation correctly. -->
+        </button>
+      </div>
     </section>
 
   </header>
@@ -214,64 +291,90 @@
 
 
     <section class="container pb-5">
-      <!-- This section wrapping the category showcase.
-       - `container`: Ensures proper spacing and alignment within the responsive Bootstrap container.
-       - `pb-5`: Adds bottom padding for spacing before the next section. -->
+      <!-- 📌 Main Section Wrapper:
+       - `container`: Keeps the section responsive within Bootstrap’s grid system.
+       - `pb-5`: Adds padding at the bottom for spacing before the next section. -->
 
       <div class="container text-center">
-        <!-- Nested container:
-         - `text-center`: Centers all text inside the section for uniform alignment. -->
+        <!-- 📌 Nested Container:
+         - `text-center`: Centers text content for a uniform layout. -->
 
-        <div class="row g-3">
-          <!-- Bootstrap row layout for category items:
-           - `g-3`: Adds spacing (`gap`) between grid columns to prevent overlapping elements. -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- 📌 Bootstrap Grid System:
+           - `row`: Defines a flexible row layout.
+           - `row-cols-1`: On small screens, displays one item per row.
+           - `row-cols-md-2`: On medium screens, displays two items per row.
+           - `row-cols-lg-3`: On large screens, displays three items per row.
+           - `g-4`: Adds space (`gap-4`) between columns for a clean layout. -->
 
           <!-- 🔹 First Category - Watch -->
-          <div class="col-4">
-            <!-- Defines a 3-column grid layout:
-             - `col-4`: Each item takes up 4 columns of the Bootstrap 12-column grid system. -->
-
-            <div class="col p-3 d-flex justify-content-center align-items-center bg-info rounded-pill">
-              <!-- Category card container:
-               - `p-3`: Adds padding to provide spacing within the card.
-               - `d-flex justify-content-center align-items-center`: Uses Flexbox to center both vertically and horizontally.
-               - `bg-info`: Applies a Bootstrap info-colored background (light blue).
-               - `rounded-pill`: Ensures the card has fully rounded corners, creating a pill shape. -->
+          <div class="col">
+            <div
+              class="p-3 d-flex flex-column flex-md-row justify-content-center align-items-center bg-info rounded-pill">
+              <!-- 📌 Category Card:
+               - `p-3`: Adds padding for better spacing.
+               - `d-flex`: Uses Flexbox for alignment.
+               - `flex-column flex-md-row`: Stacks elements vertically on small screens, side-by-side on medium+ screens.
+               - `justify-content-center align-items-center`: Centers content horizontally & vertically.
+               - `bg-info`: Applies a light blue background.
+               - `rounded-pill`: Gives the container fully rounded corners. -->
 
               <h1 class="col-text">Watch</h1>
-              <!-- Category title with semantic `<h1>` for readability. -->
-
               <img src="Project-Design-&-Image/images/categories/watch.png" alt="Watch Image"
                 class="img-fluid rounded-pill">
-              <!-- Category image:
-               - `img-fluid`: Ensures the image is responsive and scales properly.
-               - `rounded-pill`: Gives the image a pill-shaped border.
-               - `alt="Watch Image"`: Improves accessibility by describing the image for screen readers. -->
+              <!-- 📌 Image Properties:
+               - `img-fluid`: Ensures responsiveness and scales the image properly.
+               - `rounded-pill`: Creates a pill-shaped border for aesthetics.
+               - `alt="Watch Image"`: Provides accessibility for screen readers. -->
             </div>
           </div>
 
           <!-- 🔹 Second Category - Bag -->
-          <div class="col-4">
-            <div class="col p-3 d-flex justify-content-center align-items-center bg-warning rounded-pill">
-              <!-- Styling is identical to the first category, but uses `bg-warning` (yellow background). -->
+          <div class="col">
+            <div
+              class="p-3 d-flex flex-column flex-md-row justify-content-center align-items-center bg-warning rounded-pill">
+              <!-- 📌 Category Card:
+               - `p-3`: Adds padding for better spacing.
+               - `d-flex`: Uses Flexbox for alignment.
+               - `flex-column flex-md-row`: Stacks elements vertically on small screens, side-by-side on medium+ screens.
+               - `justify-content-center align-items-center`: Centers content horizontally & vertically.
+               - `bg-info`: Applies a light blue background.
+               - `rounded-pill`: Gives the container fully rounded corners. -->
+
               <h1 class="col-text">Bag</h1>
-              <img src="Project-Design-&-Image/images/categories/bag.png" alt="Bag Image" class="img-fluid">
+              <img src="Project-Design-&-Image/images/categories/bag.png" alt="Bag Image"
+                class="img-fluid rounded-pill">
+              <!-- 📌 Image Properties:
+               - `img-fluid`: Ensures responsiveness and scales the image properly.
+               - `rounded-pill`: Creates a pill-shaped border for aesthetics.
+               - `alt="Watch Image"`: Provides accessibility for screen readers. -->
             </div>
           </div>
 
           <!-- 🔹 Third Category - Shoes -->
-          <div class="col-4">
-            <div class="col p-3 d-flex justify-content-center align-items-center bg-success rounded-pill">
-              <!-- Uses `bg-success` (green background) for visual contrast. -->
+          <div class="col">
+            <div
+              class="p-3 d-flex flex-column flex-md-row justify-content-center align-items-center bg-success rounded-pill">
+              <!-- 📌 Category Card:
+               - `p-3`: Adds padding for better spacing.
+               - `d-flex`: Uses Flexbox for alignment.
+               - `flex-column flex-md-row`: Stacks elements vertically on small screens, side-by-side on medium+ screens.
+               - `justify-content-center align-items-center`: Centers content horizontally & vertically.
+               - `bg-info`: Applies a light blue background.
+               - `rounded-pill`: Gives the container fully rounded corners. -->
+
               <h1 class="col-text">Shoes</h1>
-              <img src="Project-Design-&-Image/images/categories/shoes.png" alt="Shoes Image" class="img-fluid">
+              <img src="Project-Design-&-Image/images/categories/shoes.png" alt="Shoes Image"
+                class="img-fluid rounded-pill">
+              <!-- 📌 Image Properties:
+               - `img-fluid`: Ensures responsiveness and scales the image properly.
+               - `rounded-pill`: Creates a pill-shaped border for aesthetics.
+               - `alt="Watch Image"`: Provides accessibility for screen readers. -->
             </div>
           </div>
 
         </div>
-
       </div>
-
     </section>
 
 
